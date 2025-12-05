@@ -1,0 +1,11 @@
+@import 'reset.css';
+@import 'variables.css';
+@import 'fonts.css';
+
+a:hover,
+button:hover,
+a:active,
+button:active {
+  background-color: var(--color-secondary);
+  opacity: 0.9;
+}

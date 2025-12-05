@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('assets/fonts/SourceSansPro-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('assets/fonts/SourceSansPro-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('assets/fonts/SourceSansPro-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Spin Cycle';
+  src: url('assets/fonts/spincycle_ot.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
