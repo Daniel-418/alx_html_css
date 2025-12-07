@@ -10,6 +10,7 @@
    ========================================= */
 body {
   font-family: 'Source Sans Pro';
+  line-height: 1.5;
 }
 
 a:hover,
@@ -57,17 +58,82 @@ header {
   align-items: center;
 }
 
-.first_screen {
-  color: var(--color-white);
+.first_screen,
+.second_screen,
+.third_screen,
+.fourth_screen,
+footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+.first_screen {
+  color: var(--color-white);
   background-image: url('assets/images/headphones_hero_1.jpg');
   background-size: cover;
   background-position: 35% center;
   background-repeat: no-repeat;
   height: 100vh;
+}
+
+.second_screen {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: space-around;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.second_screen h2 {
+  font-weight: 600px;
+  font-size: 2rem;
+}
+
+.second_screen .description {
+  flex-direction: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+.icon {
+  width: 10rem;
+  height: 11.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon:hover {
+  border-style: solid;
+  border-color: var(--color-secondary);
+  border-width: 2px;
+  border-radius: 25px;
+}
+
+
+.icons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.icons ul {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  padding: 2rem;
 }
 
 /* =========================================
@@ -111,7 +177,6 @@ header {
 
 .content {
   margin-top: auto;
-  height: 65vh;
   max-width: 40rem;
   padding: 1rem;
   display: flex;
@@ -119,14 +184,18 @@ header {
   align-items: center;
 }
 
+.first_screen .content {
+  height: 65vh;
+}
+
 .content h1 {
-  font-weight: 600;
+  font-weight: bold;
   font-size: 2rem;
 }
 
 .title {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .subtitle {
@@ -139,10 +208,20 @@ header {
   margin-bottom: auto;
 }
 
+.icon h3 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
 /* =========================================
    Media Queries (Tablet & Desktop)
    ========================================= */
 @media (min-width: 481px) {
+  .icons ul {
+    max-width: 1000px;
+    justify-content: space-between;
+  }
+
   .first_screen {
     min-height: 100vh;
     background-position: center center;
