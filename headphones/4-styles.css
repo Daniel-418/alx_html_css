@@ -1,4 +1,4 @@
-/* ---------- global container & reset ---------- */
+
 :root{
   --max-content: 1000px;
   --accent: #FF6565;
@@ -187,8 +187,12 @@ header {
   margin: 0 auto;
   padding: 0 20px;
 }
-
 /* Section wrapper */
+.what-we-do .holberton-icon i {
+    font-family: 'holberton_school-icon' !important;
+    font-style: normal;
+    font-weight: normal;
+}
 .what-we-do {
   background: #ffffff;           /* white band as in design */
   color: var(--dark);
@@ -234,26 +238,25 @@ header {
 
 /* Icon wrapper (uses icon font) */
 .holberton-icon {
-  display: inline-block;
-  margin-bottom: 18px;
-  /* icon color matches CTA accent */
-  color: var(--accent);
-  font-size: 46px;              /* large icon */
-  line-height: 1;
-  width: 56px;
-  height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    width: 120px;
+    height: 120px;
+    color: #FF6565;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
 
-/* If the demo requires <i> inside span, style the i */
 .holberton-icon i {
-  font-style: normal;           /* ensure not italicized */
-  display: inline-block;
-  font-size: inherit;           /* inherit the .holberton-icon size */
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  vertical-align: middle;
+    font-family: 'holberton_school-icon' !important;  /* MOST IMPORTANT FIX */
+    font-style: normal;
+    font-size: inherit;
+    display: inline-block;
+    line-height: 1;
 }
+
 
 /* Feature title */
 .feature-item h3 {
@@ -312,4 +315,227 @@ header {
     color: #FF6565;
     display: block;
     margin-bottom: 20px;
+}
+
+
+/* OUR RESULTS SECTION */
+.our-results {
+    text-align: center;
+    padding: 80px 0;
+    background-image: url("images/headphones_hero_2.jpg");  /* <-- your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;   /* text becomes white on dark image */
+}
+
+.our-results h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.results-text {
+    max-width: 600px;
+    margin: 0 auto 60px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* GRID */
+.results-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+/* EACH CARD */
+.result-item {
+    text-align: center;
+}
+
+/* PENTAGON SHAPE */
+.pentagon {
+    width: 120px;
+    height: 120px;
+    background: #FF6565;
+    clip-path: polygon(
+        50% 0%,
+        95% 35%,
+        77% 90%,
+        23% 90%,
+        5% 35%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pentagon .value {
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+}
+
+/* LABEL UNDER PENTAGON */
+.label {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #071629;
+}
+/* CONTACT SECTION */
+.contact {
+    padding: 80px 0;
+    background: #fff;
+    text-align: center;
+}
+
+.contact h2 {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #0f2433;
+}
+
+.contact-form {
+    max-width: 420px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    color: #0f2433;
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #d9d9d9;
+    padding: 10px 4px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-bottom-color: #FF6565;
+}
+
+/* CTA button */
+.btn-submit {
+    display: block;
+    margin: 24px auto 0;
+    background: #ff6565;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 24px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "Montserrat", Arial, sans-serif;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.btn-submit:hover {
+    opacity: 0.9;
+}
+/* ---------- FOOTER (Holberton icon glyphs) ---------- */
+.footer {
+  background: #071629;
+  color: #fff;
+  padding: 60px 0 90px;
+  position: relative;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.footer-logo {
+  width: 120px;
+  height: auto;
+}
+
+/* Social icons container */
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* generic social link */
+.social { text-decoration: none; }
+
+/* Holberton icon helper (makes font-based glyphs behave like icons) */
+.footer .holberton-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  background: rgba(255,255,255,0.18);
+  color: #fff;
+
+  font-size: 22px;
+  line-height: 1;
+  transition: transform .18s ease, background .18s ease;
+}
+
+/* If the icon font provides glyphs via :before, ensure the ::before uses the same font */
+/* (Most holberton demo CSS already sets the font-family; these rules are defensive) */
+.footer .holberton-icon::before {
+  font-family: 'holberton_school-icon' !important;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+/* hover/focus */
+.social:hover .holberton-icon,
+.social:focus .holberton-icon {
+  transform: translateY(-3px);
+  background: rgba(255,255,255,0.22);
+  outline: none;
+}
+
+/* center copyright at bottom */
+.footer-copyright {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 18px;
+  width: 100%;
+  text-align: center;
+  color: rgba(255,255,255,0.35);
+  font-size: 13px;
+}
+
+/* responsive */
+@media (max-width: 600px) {
+  .footer-inner { flex-direction: column; gap: 16px; align-items: center; padding: 0 20px; }
+  .footer-right { gap: 12px; }
+  .footer-logo { width: 100px; }
+  .footer-copyright { bottom: 12px; font-size: 12px; }
 }

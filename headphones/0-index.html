@@ -1,128 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Headphones</title>
-  <meta name="description" content="A brief description of your web page content.">
-
-
-  <link rel="stylesheet" href="0-styles.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEADPHONES</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="0-styles.css">
 
 </head>
-
 <body>
 
-  <main>
-    <div class="first_screen">
-      <header>
-        <input type="checkbox" id="menu_toggle" class="hidden_checkbox">
-        <div class="hamburger_and_logo">
-          <label for="menu_toggle" class="hamburger_label">
-            <img class="hamburger" src="assets/images/hamburger.svg">
-          </label>
-          <img class="logo" src="assets/images/main_logo.svg">
-        </div>
-        <nav>
-          <ul>
-            <li><a class="nav_link">what we do</a></li>
-            <li><a class="nav_link">our results</a></li>
-            <li><a class="nav_link">contact us</a></li>
-          </ul>
-        </nav>
-      </header>
-      <div class="content">
-        <div class="title">
-          <h1>Lorem ipsuu dolor set amet lorem ipsum</h1>
-          <p class="subtitle">Lorem ipsum dolor set amet lorem ipsum dolor set</p>
-        </div>
-        <button class="call_to_action">call to action</button>
-        <p class="main_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip
-          ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-          fugiat
-          nulla pariatur.</p>
-      </div>
-    </div>
+    <!-- HEADER (transparent, sits on top of hero) -->
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">
+                <img src="images/favicon.png" alt="Headphones logo">
+                <span class="logo-text">HEADPHONES</span>
+            </a>
 
-    <div class="second_screen">
-      <p class="what_we_do">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-        eu
-        fugiat nulla pariatur.</p>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">what we do</a></li>
+                    <li><a href="#">our results</a></li>
+                    <li><a href="#">contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-      <div class="icons">
-        <ul>
-          <li class="icon">
-            <img src="assets/images/sound_frequency.svg">
-            <p class="icon_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </li>
-          <li class="icon">
-            <img src="assets/images/video.svg">
-            <p class="icon_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </li>
-          <li class="icon">
-            <img src="assets/images/music.svg">
-            <p class="icon_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </li>
-          <li class="icon">
-            <img src="assets/images/hearing.svg">
-            <p class="icon_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="third_screen">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur.</p>
-      <div class='polygon'>
-        <h1 class="polygon_header">+2%</h1>
-        <p class="polygon_subtitle">Lorem ipsum dolor</p>
-      </div>
-      <div class='polygon'>
-        <h1 class="polygon_header">+2%</h1>
-        <p class="polygon_subtitle">Lorem ipsum dolor</p>
-      </div>
-      <div class='polygon'>
-        <h1 class="polygon_header">+2%</h1>
-        <p class="polygon_subtitle">Lorem ipsum dolor</p>
-      </div>
-      <div class='polygon'>
-        <h1 class="polygon_header">+2%</h1>
-        <p class="polygon_subtitle">Lorem ipsum dolor</p>
-      </div>
-    </div>
-    <div class="fourth_screen">
-      <form>
-        <input type="text" placeholder="Name">
-        <input type="email" placeholder="Email">
-        <input type="text" placeholder="Your message">
-        <button type="submit">Call to action</button>
-      </form>
-    </div>
-  </main>
-  <footer>
-    <div class="footer_logo">
-      <img class="small_logo" src="assets/images/small_logo.svg">
-      <span>HEAdPHONEs</span>
-    </div>
-    <div class="social_icons">
-      <ul>
-        <li><a href="#"><img class="facebook" src="assets/images/Facebook_White.svg"></a></li>
-        <li><a href="#"><img class="twitter" src="assets/images/Twitter_White.svg"></a></li>
-        <li><a href="#"><img class="instagram" src="assets/images/Instagram_White.svg"></a></li>
-      </ul>
-    </div>
-    <p class="copyright">&copy;headphones 2020</p>
-  </footer>
+   <section class="hero">
+  <div class="container">
+    <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
+    <p class="sub">Lorem ipsum dolor set amet lorem ipsum dolor set</p>
+
+    <a class="btn" href="#contact">CALL TO ACTION</a>
+
+    <p class="lead">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+</section>
+
 </body>
-
 </html>
